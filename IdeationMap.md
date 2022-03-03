@@ -18,25 +18,25 @@
 #
 
 ### Technology Used:
- HTML
- CSS
- bootstrap
- Vanilla JavaScript
- NodeJS
- ExpressJS
- ReactJS
- MongoDB/Mongoose(DATABASE)
- PHP
+ * HTML
+ * CSS
+ * bootstrap
+ * Vanilla JavaScript
+ * NodeJS
+ * ExpressJS
+ * ReactJS
+ * MongoDB/Mongoose(DATABASE)
+ * PHP
 
 #
 
 ### Tools Used:
- Atom Editor
- VS Code
- Web Browser
- Git and GitHub
- Star UML
- Hyper
+ * Atom Editor
+ * VS Code
+ * Web Browser
+ * Git and GitHub
+ * Star UML
+ * Hyper
 
 #
 
@@ -45,5 +45,5 @@
 
 #
 
-## Project execution work flow diagram
+### Project execution work flow diagram
 <img src="https://github.com/Pallavikumarimdb/HCL-CRMS/blob/main/DOCUMENTATION/CRMS-FlowDiagramjpeg2.jpg" alt="Work-flow-diagram" style="width:100%"/>
