@@ -36,6 +36,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/Rd/QvjhXCl8="
 									},
+									"fillColor": "#ffca2b",
 									"font": "Arial;13;0",
 									"left": 418,
 									"top": 114,
@@ -45,6 +46,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#ffca2b",
 							"font": "Arial;13;0",
 							"left": 408,
 							"top": 104,
@@ -916,6 +918,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RhPvfDpMC2o="
 									},
+									"fillColor": "#e2e2e2",
 									"font": "Arial;13;0",
 									"left": 434,
 									"top": 426,
@@ -925,6 +928,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#e2e2e2",
 							"font": "Arial;13;0",
 							"left": 424,
 							"top": 416,
@@ -1029,6 +1033,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RhZrGjp3cvA="
 									},
+									"fillColor": "#ff8282",
 									"font": "Arial;13;0",
 									"left": 394,
 									"top": 506,
@@ -1038,6 +1043,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#ff8282",
 							"font": "Arial;13;0",
 							"left": 384,
 							"top": 496,
@@ -1097,6 +1103,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RhnvzDqnolE="
 									},
+									"fillColor": "#9bff38",
 									"font": "Arial;13;0",
 									"left": 738,
 									"top": 506,
@@ -1106,6 +1113,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#9bff38",
 							"font": "Arial;13;0",
 							"left": 728,
 							"top": 496,
@@ -1303,6 +1311,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RjCNJjtAxgY="
 									},
+									"fillColor": "#7fff00",
 									"font": "Arial;13;0",
 									"left": 362,
 									"top": 618,
@@ -1312,6 +1321,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#7fff00",
 							"font": "Arial;13;0",
 							"left": 352,
 							"top": 608,
@@ -1337,6 +1347,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RjCXvjtIuZA="
 									},
+									"fillColor": "#ff2b2b",
 									"font": "Arial;13;0",
 									"left": 450,
 									"top": 618,
@@ -1346,6 +1357,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#ff2b2b",
 							"font": "Arial;13;0",
 							"left": 440,
 							"top": 608,
@@ -1404,6 +1416,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/RlCmUzt5p/I="
 									},
+									"fillColor": "#ff8056",
 									"font": "Arial;15;0",
 									"left": 450,
 									"top": 810,
@@ -1413,6 +1426,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#ff8056",
 							"font": "Arial;15;0",
 							"left": 440,
 							"top": 800,
@@ -2387,6 +2401,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF/SUZzz4MPn2Y="
 									},
+									"fillColor": "#6dff6d",
 									"font": "Arial;13;0",
 									"left": 220.13720703125,
 									"top": 1084.25,
@@ -2396,6 +2411,7 @@
 									"wordWrap": true
 								}
 							],
+							"fillColor": "#6dff6d",
 							"font": "Arial;13;0",
 							"left": 184,
 							"top": 1072,
@@ -2559,6 +2575,32 @@
 							"nameLabel": {
 								"$ref": "AAAAAAF/SUmF3oNeE6k="
 							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAF/UIg67vF+OGQ=",
+							"_parent": {
+								"$ref": "AAAAAAF/Rd74CDhPhr0="
+							},
+							"font": "Arial;18;0",
+							"left": 24,
+							"top": 8,
+							"width": 297,
+							"height": 51,
+							"text": "PROJECT EXECUTION DIAGRAM"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAF/UInrLfGL2wM=",
+							"_parent": {
+								"$ref": "AAAAAAF/Rd74CDhPhr0="
+							},
+							"font": "Arial;15;0",
+							"left": 800,
+							"top": 16,
+							"width": 113,
+							"height": 51,
+							"text": "Pallavi Kumari (39120078)"
 						}
 					]
 				},
