@@ -1,16 +1,6 @@
 const form = document.getElementById('form');
-const name = document.getElementById('name');
 const userid = document.getElementById('userid');
-const email = document.getElementById('email');
 const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-
-
-console.log(name+"   n");
-console.log(userid+"   u");
-console.log(email+"   e");
-console.log(password+"   p1");
-console.log(password2+"     p2");
 
 //Show input error message
 function showError(input, message) {
@@ -32,17 +22,17 @@ function showSuccess(input) {
   formControl.className = 'form-control success';
 }
 
-//Check to see if email is valid
-function checkEmail(input) {
-  const regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-  //if (regular expression representing a valid email, then true else false)
-  if (regExEmail.test(input.value.trim())) {
-    showSuccess(input);
-  } else {
-    showError(input, 'Please enter valid email ');
-  }
-}
+// //Check to see if email is valid
+// function checkEmail(input) {
+//   const regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//
+//   //if (regular expression representing a valid email, then true else false)
+//   if (regExEmail.test(input.value.trim())) {
+//     showSuccess(input);
+//   } else {
+//     showError(input, 'Not a real email bub');
+//   }
+// }
 
 //check required fields
 function checkRequired(inputArr) {
@@ -73,14 +63,14 @@ function checkLength(input, min, max) {
   }
 }
 
-// Check if the passwords match
-function checkPasswords(input1, input2) {
-  if (input1.value !== input2.value) {
-    showError(input2, 'Password did not match');
-  } else {
-    showSuccess(input);
-  }
-}
+// // Check if the passwords match
+// function checkPasswords(input1, input2) {
+//   if (input1.value !== input2.value) {
+//     showError(input2, 'Those dont match');
+//   } else {
+//     showSuccess(input);
+//   }
+// }
 
 //Get the fieldname
 //finds first letter and uppercases it, then slices off the old first letter and concatenates
@@ -92,11 +82,9 @@ function getFieldName(input) {
 form.addEventListener('submit', function(e) {
   // use preventDefault to keep the page from refreshing everytime you hit submit
   e.preventDefault();
-  checkRequired([name, userid, email, password, password2]);
-  checkLength(name, 3, 30);
+
+  checkRequired([userid, password]);
   checkLength(userid, 3, 15);
   checkLength(password, 6, 25);
-    checkLength(password2, 6, 25);
-  checkEmail(email);
-  checkPasswords(password, password2);
+  checkPasswords(password);
 });

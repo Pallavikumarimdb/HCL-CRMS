@@ -30,7 +30,6 @@ h5 {
   font-family: 'Yeseva One', Georgia, cursive;
   /* color: var(--header-color); */
   color: aliceblue;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +41,6 @@ body {
   justify-content: center;
   flex-flow: column nowrap;
   min-height: 80vh;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -53,7 +51,6 @@ body {
   box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
   background-color: #1e3957;
   margin: 30px auto;
-  scroll-behavior: smooth;
 }
 
 hr {
@@ -61,7 +58,7 @@ hr {
   text-align: center;
   position: relative;
   background: none;
-    margin: 0 14em 1.5em 0;
+  margin: 0 0 1.5em 15.5em;
   border: 0;
   border-top: dashed 1px #e9bd7c;
   &:before {
@@ -87,26 +84,24 @@ hr {
 
 
 
+
 .form {
   padding: 30px 40px;
-  transition: all 0.6s linear;
 }
 a{
   text-decoration: none;
-  scroll-behavior: smooth;
-  transition: all 0.6s linear;
 }
 .form .sign h2 {
   /* text-align: center; */
   display: inline-block;
   margin: 0 0 10px;
+  color:darkgrey;
 }
 .form .log h2 {
   /* text-align: center; */
   display: inline-block;
   margin: 0 0 10px;
   float: right;
-  color:darkgrey;
 }
 
 .form-control {
@@ -179,4 +174,12 @@ a{
 .form button:focus {
   outline: 0;
   background-color: #fc364c;
+}
+
+
+.forg-pass p{
+  color:dimgrey;
+  text-decoration: underline;
+  margin-top: 30px;
+  text-align: center;
 }

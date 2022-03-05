@@ -8,15 +8,17 @@
   <body>
     <div class="container">
       <form id="form" class="form">
-        <h2>SIGN UP!</h2>
+        <a href="#" class="sign" id="sign-id"><h2>SIGN UP!</h2></a>
+        <a href="../Admin-Login/index.html" class="log" id="log-id"><h2>LOGIN!</h2></a>
+        <hr class="center-ball">
         <div class="form-control">
-          <label for="username">Name</label>
+          <label for="Name">Name</label>
           <input type="text" id="name" placeholder="Enter your name" />
           <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="username">UserID</label>
-          <input type="text" id="username" placeholder="Enter userid" />
+          <input type="text" id="userid" placeholder="Enter userid" />
           <small>Error message</small>
         </div>
         <div class="form-control">
@@ -38,9 +40,9 @@
           />
           <small>Error message</small>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">SIGN UP</button>
       </form>
     </div>
-
+<script src="index.js"></script>
   </body>
 </html>
