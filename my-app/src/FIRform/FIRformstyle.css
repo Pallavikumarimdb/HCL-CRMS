@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Yeseva+One&display=swap');
+
+* {
+  --hibiscus-love: #fc465c;
+  --fine-ii: #f9b198;
+  --afl: #fac8af;
+  --mexican-sky: #cfdddd;
+  --brasillia-peach: #facb85;
+  --free: #33032d;
+  --captured: #2b2120;
+  --primary-color: var(--brasillia-peach);
+  --secondary-color: var(--hibiscus-love);
+  --tertiary-color: var(--fine-ii);
+  --quadrary-color: var(--afl);
+  --bg-color: var(--mexican-sky);
+  --text-color: var(--free);
+  --header-color: var(--captured);
+  --error-color: var(--hibiscus-love);
+  --success-color: #73d12e;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Yeseva One', Georgia, cursive;
+  /* color: var(--header-color); */
+  color: aliceblue;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  background-color: var(--bg-color);
+  color: var(--free);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-height: 80vh;
+  scroll-behavior: smooth;
+}
+
+.FIR-container {
+  width: 85%;
+  border-radius: 0.6em;
+  padding: 10px;
+  /* background-color: var(--primary-color); */
+  box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
+  background-color: #1e3957;
+  margin: 30px auto;
+  scroll-behavior: smooth;
+}
+
+.FIR-center-ball{
+  counter-increment: hr;
+  text-align: center;
+  position: relative;
+  background: none;
+  margin: 0 0em 1.5em 0;
+  border: 0;
+  border-top: dashed 1px #e9bd7c;
+
+  &:before {
+    content: 'Chapter: 'counter(hr);
+    font-family: 'Montez';
+    font-size: 30px;
+    background: white;
+    width: 50%;
+    margin-left: -25%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    color: lighten(black, 20%);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.FIR-form {
+  padding: 20px 35px;
+  transition: all 0.6s linear;
+}
+
+a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition: all 0.6s linear;
+}
+
+.FIR-form .FIR-head-sign h2, p {
+  scroll-behavior: smooth;
+  transition: all 0.6s linear;
+  text-align: center;
+  color: aliceblue;
+}
+
+.FIR-form .FIR-log h2 {
+  /* text-align: center; */
+  display: inline-block;
+  margin: 0 0 10px;
+  float: right;
+  color: darkgrey;
+}
+
+.FIR-form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.FIR-form-control label {
+  /* color: var(--text-color); */
+  color: aliceblue;
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.FIR-form-control input, select, textarea {
+  border-radius: 6px;
+  /* background: var(--primary-color); */
+  background-color: var(--bg-color);
+  /* box-shadow: inset 3px 3px 7px #e9bd7c, inset -3px -3px 7px #ffd98e; */
+  /* min-height: 2.618em; */
+  border: var(--quadrary-color) solid 2px;
+  /* display: block; */
+  font-size: 14px;
+  padding: 10px;
+}
+
+.FIR-form-control input:focus, textarea:focus {
+  outline: 0;
+  border-color: var(--tertiary-color);
+}
+
+.FIR-form-control .FIR-success input {
+  border-color: var(--success-color);
+}
+
+.FIR-form-control .FIR-error input {
+  border-color: var(--error-color);
+}
+
+.FIR-form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.FIR-form-control.FIR-error small {
+  visibility: visible;
+}
+
+.FIR-form button {
+  cursor: pointer;
+  /* background: var(--secondary-color); */
+  background-color: #067ff9;
+  /* box-shadow: 4px 4px 8px #c19c66, -4px -4px 8px #fffaa4; */
+  border: 1px solid #ec263c66;
+  color: azure;
+  font-size: 16px;
+  padding: 0.618em 1.2em;
+  border-radius: 0.4em;
+  font-family: 'Yeseva One', Georgia, cursive;
+  display: block;
+  margin-top: 1.2em;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.FIR-form button:active,
+.FIR-form button:focus {
+  outline: 0;
+  background-color: #fc364c;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 1  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-add-pre-sub {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
+
+.FIR-add-pre-sub input, select {
+  width: 205px;
+}
+
+.FIR-simp-text {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 2  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-add-pre-sub1 {
+  display: inline-block;
+  margin: 13px;
+  color: white;
+  width: 45%;
+}
+
+.FIR-div-sec-section {
+  margin-left: 30px;
+}
+
+.FIR-add-pre-sub1 label {
+  display: inline-block;
+}
+
+.FIR-add-pre-sub1 input {
+  display: inline-block;
+  width: 82%;
+}
+
+.FIR-add-pre-sub2 {
+  display: block;
+  margin: 13px;
+  color: white;
+  width: 93%;
+  margin-left: 30px;
+}
+
+.FIR-add-pre-sub2 label {
+  display: inline-block;
+}
+
+.FIR-add-pre-sub2 input {
+  display: inline-block;
+  width: 76%;
+}
+
+.FIR-simp-text2 {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 3  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-simp-text3 {
+  margin-left: 5px;
+  margin-right: 10px;
+  color: white;
+}
+
+.FIR-add-pre-sub3 {
+  display: inline-block;
+  margin: 12px;
+  color: white;
+  width: 280px;
+}
+
+.FIR-add-pre-sub3 input {
+  width: 257px;
+}
+
+.FIR-simp-text4 {
+  margin-left: 33px;
+  color: white;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 4s  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-simp-text5 {
+  margin-right: 40px;
+  color: white;
+}
+
+.FIR-form-check-input {
+  height: 1rem;
+  margin-right: 5px;
+  min-height: 0;
+}
+
+.FIR-add-pre-sub41 {
+  display: inline-block;
+  margin: 12px;
+  color: white;
+  /* width: 24%; */
+}
+
+.FIR-add-pre-sub4 {
+  display: inline-block;
+  margin: 12px 40px 12px 40px;
+  color: white;
+  width: 140px;
+}
+
+.FIR-add-pre-sub4 .FIR-form-check-input {
+  width: 20px;
+}
+
+.FIR-add-pre-sub4 .FIR-form-label1 {
+  display: inline-block;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 5  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-add-pre-sub51 {
+  display: inline-block;
+  margin: 12px;
+  color: white;
+  width: 17%;
+}
+
+.FIR-add-pre-sub5 {
+  display: inline-block;
+  margin: 12px;
+  color: white;
+  width: 250px;
+}
+
+.FIR-add-pre-sub5 input {
+  width: 230px;
+}
+
+.FIR-add-pre-sub51 label {
+  display: inline;
+}
+
+.FIR-simp-text6 {
+  color: white;
+}
+
+.FIR-addr-text-main {
+  display: inline-block;
+  width: 45%;
+}
+
+.FIR-addr-text {
+  margin-left: 50px;
+}
+
+.FIR-simp-text7 {
+  margin-left: 15px;
+  margin-right: 18px;
+}
+
+.FIR-addr-text {
+  width: 90%;
+}
+
+.FIR-addr-text-dist {
+  max-width: 40%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: -85px;
+}
+
+.FIR-add-pre-sub6 {
+  margin-left: 30px;
+}
+
+.FIR-add-pre-sub6 input {
+  width: 90%;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>  CUSTOM FIELDS 6  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.FIR-form-control6 input {
+  width: 60%;
+}
+
+.FIR-name-input {
+  margin-left: 13%;
+}
+
+.FIR-form-control6 label {
+  display: inline-block;
+}
+
+.FIR-simp-text8 {
+  margin-right: 20px;
+}
+
+.FIR-add-pre-sublast {
+  display: block;
+}
+
+.FIR-addr-info {
+  width: 90%;
+  margin-left: 50px;
+}

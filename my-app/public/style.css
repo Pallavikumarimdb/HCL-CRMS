@@ -1,4 +1,9 @@
+#root{
 
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
 Html, body {
   max-width: 100%;
@@ -86,7 +91,7 @@ color: white;
 
 .nav-list li a:hover{
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);s
 }
 
 dl, ol, ul {
@@ -169,7 +174,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: #1b9bff;
+  /* background: #1b9bff; */
   transition: .5s;
 }
 
