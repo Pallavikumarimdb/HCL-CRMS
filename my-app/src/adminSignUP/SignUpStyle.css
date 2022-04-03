@@ -1,24 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Yeseva+One&display=swap');
 
 * {
-  --hibiscus-love: #fc465c;
-  --fine-ii: #f9b198;
-  --afl: #fac8af;
-  --mexican-sky: #cfdddd;
-  --brasillia-peach: #facb85;
-  --free: #33032d;
-  --captured: #2b2120;
-
-  --primary-color: var(--brasillia-peach);
-  --secondary-color: var(--hibiscus-love);
-  --tertiary-color: var(--fine-ii);
-  --quadrary-color: var(--afl);
-  --bg-color: var(--mexican-sky);
-  --text-color: var(--free);
-  --header-color: var(--captured);
-  --error-color: var(--hibiscus-love);
-  --success-color: #73d12e;
-
   box-sizing: border-box;
 }
 
@@ -30,6 +12,7 @@ h5 {
   font-family: 'Yeseva One', Georgia, cursive;
   /* color: var(--header-color); */
   color: aliceblue;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,24 +24,25 @@ body {
   justify-content: center;
   flex-flow: column nowrap;
   min-height: 80vh;
+  scroll-behavior: smooth;
 }
 
-.log-container {
+.signup-container {
   width: 430px;
   border-radius: 0.6em;
   padding: 10px;
-  /* background-color: var(--primary-color); */
   box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
   background-color: #1e3957;
   margin: 30px auto;
+  scroll-behavior: smooth;
 }
 
-.log-center-ball {
+.signup-center-ball {
   counter-increment: hr;
   text-align: center;
   position: relative;
   background: none;
-  margin: 0 0 1.5em 13.5em;
+    margin: 0 13em 1.5em 0;
   border: 0;
   border-top: dashed 1px #e9bd7c;
   &:before {
@@ -66,7 +50,7 @@ body {
     font-family: 'Montez';
     font-size: 30px;
     background: white;
-    width: 70%;
+    width: 50%;
     margin-left: -25%;
     height: 30px;
     line-height: 30px;
@@ -84,27 +68,27 @@ body {
 
 
 
-
-.log-form {
+.signup-form {
   padding: 30px 40px;
+  transition: all 0.6s linear;
 }
 a{
   text-decoration: none;
+  scroll-behavior: smooth;
+  transition: all 0.6s linear;
 }
-.log-form .log-sign h2 {
-  /* text-align: center; */
+.signup-form .signup-sign h2 {
   display: inline-block;
   margin: 0 0 10px;
-  color:darkgrey;
 }
-.log-form .log-log h2 {
-  /* text-align: center; */
+.signup-form .signup-log h2 {
   display: inline-block;
   margin: 0 0 10px;
   float: right;
+  color:darkgrey;
 }
 
-.log-form-control {
+.signup-form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
@@ -112,17 +96,14 @@ a{
   border: none;
 }
 
-.log-form-control label {
-  /* color: var(--text-color); */
+.signup-form-control label {
   color: aliceblue;
   display: block;
   margin-bottom: 5px;
 }
-.log-form-control input {
+.signup-form-control input {
   border-radius: 6px;
-  /* background: var(--primary-color); */
     background-color: var(--bg-color);
-  /* box-shadow: inset 3px 3px 7px #e9bd7c, inset -3px -3px 7px #ffd98e; */
   min-height: 2.618em;
   border: var(--quadrary-color) solid 2px;
   display: block;
@@ -131,20 +112,20 @@ a{
   padding: 10px;
 }
 
-.log-form-control input:focus {
+.signup-form-control input:focus {
   outline: 0;
   border-color: var(--tertiary-color);
 }
 
-.log-form-control.success input {
+.signup-form-control.success input {
   border-color: var(--success-color);
 }
 
-.log-form-control.error input {
+.signup-form-control.error input {
   border-color: var(--error-color);
 }
 
-.log-form-control small {
+.signup-form-control small {
   color: var(--error-color);
   position: absolute;
   bottom: 0;
@@ -152,15 +133,13 @@ a{
   visibility: hidden;
 }
 
-.log-form-control.error small {
+.signup-form-control.error small {
   visibility: visible;
 }
 
-.log-form button {
+.signup-form button {
   cursor: pointer;
-  /* background: var(--secondary-color); */
   background-color:#067ff9;
-  /* box-shadow: 4px 4px 8px #c19c66, -4px -4px 8px #fffaa4; */
   border: 1px solid #ec263c66;
   color:azure;
   font-size: 16px;
@@ -173,16 +152,8 @@ a{
   width: 92.5%;
 }
 
-.log-form button:active,
-.log-form button:focus {
+.signup-form button:active,
+.signup-form button:focus {
   outline: 0;
   background-color: #fc364c;
-}
-
-
-.log-forg-pass p{
-  color:dimgrey;
-  text-decoration: underline;
-  margin-top: 30px;
-  text-align: center;
 }
