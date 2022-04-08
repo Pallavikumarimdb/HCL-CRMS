@@ -31,13 +31,27 @@ const User = new mongoose.model("User", userSchema)
 // })
 
 
-
+// Post Routes
+app.post("/AdminLogin", (req, res)=> {
+    const {userid, password} = req.body
+    User.findOne({ userid: userid}, (err, user) => {
+        if(user){
+            if(password === user.password ) {
+                res.send({message: "Login Successfull", user: user})
+            } else {
+                res.send({ message: "Password didn't match"})
+            }
+        } else {
+            res.send({message: "User not registered"})
+        }
+    })
+})
 
 
 app.post("/AdminSignUP", (req, res)=> {
   console.log(req.body);
     const { name, userid, email, password} = req.body
-    User.findOne({email: email}, (err, user) => {
+    User.findOne({userid: userid}, (err, user) => {
         if(user){
             res.send({message: "User already registerd"})
         } else {

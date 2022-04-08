@@ -10,7 +10,7 @@ export default function App(){
     return (
         <>
 
-        <AdminSignUP/>
+        <AdminLogin/>
     {/* <Navbar />
         <MainComponent />
         <AdminSignUP/>
