@@ -1,22 +1,31 @@
 import React, { useState } from "react"
 import "./logStyle.css"
+import axios from "axios"
 
 export default function AdminLogin(){
   let url="../adminSignUP/AdminSignUP";
 
   const [ user, setUser] = useState({
-          userid: "",
-          password:"",
-      })
+         userid:"",
+         password:""
+     })
 
+     const handleChange = e => {
+         const { name, value } = e.target
+         setUser({
+             ...user,
+             [name]: value
+         })
+     }
 
-  const handleChange = e => {
-    const { name, value } = e.target
-    setUser({
-        ...user,
-        [name]: value
-    })
-}
+     const AdminLogin = () => {
+         axios.post("http://localhost:9002/AdminLogin", user)
+         .then(res => {
+             alert(res.data.message)
+             setLoginUser(res.data.user)
+             history.push("/")
+         })
+     }
 
   return(
     <>
@@ -36,7 +45,7 @@ export default function AdminLogin(){
           <input name="password" value={user.password} onChange={ handleChange } type="password" id="password" placeholder="Enter password" />
           <small>Error message</small>
         </div>
-        <button type="submit">LOGIN</button>
+        <button type="submit" onClick={AdminLogin}>LOGIN</button>
 
         <a href={url} className="log-forg-pass"><p>Forgot Password ?</p></a>
       </form>
