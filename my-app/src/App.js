@@ -9,11 +9,14 @@ import FIRform from './FIRform/FIRform';
 export default function App(){
     return (
         <>
-      <Navbar />
-      {/*  <MainComponent />
-        <AdminSignUP/>*/}
+
+        <AdminSignUP/>
+    {/* <Navbar />
+        <MainComponent />
+        <AdminSignUP/>
         <FIRform/>
         <Footer />
+        <AdminLogin/> */}
         </>
     )
 }
