@@ -1,16 +1,25 @@
-import React from 'react';
 import Navbar  from './Navbar';
 import MainComponent from './MainHomePage';
 import Footer from './Footer';
-import AdminSignUP from './adminSignUP/AdminSignUP';
-import AdminLogin from './adminLogin/AdminLogin';
+import AdminsignUP from './adminSignUP/AdminSignUP';
+import Adminlogin from './adminLogin/AdminLogin';
 import FIRform from './FIRform/FIRform';
+import { Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 
 export default function App(){
+  const [ user,  setLoginUser] = useState({})
+
     return (
         <>
-
-        <AdminLogin/>
+        <Routes>
+          <Route exact path="/" element=
+            {
+                 user, user._id ? <FIRform setLoginUser={setLoginUser}/> : <Adminlogin setLoginUser={setLoginUser}/>
+            } />
+          <Route  path="/AdminLogin" element={<Adminlogin setLoginUser={setLoginUser}/>} />
+          <Route  path="/AdminSignUP"  element={<AdminsignUP/>} />
+        </Routes>
     {/* <Navbar />
         <MainComponent />
         <AdminSignUP/>
@@ -20,3 +29,16 @@ export default function App(){
         </>
     )
 }
+
+
+// function Ternary() {
+//   const [ user, setLoginUser] = React.useState({})
+// if(user && user.userid)
+// {
+//   console.log(user.userid);
+// return <FIRform />
+// } else{
+// return <Adminlogin setLoginUser={setLoginUser}/>
+// }
+//
+// }
