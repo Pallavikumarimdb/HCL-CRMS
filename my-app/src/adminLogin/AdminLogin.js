@@ -26,7 +26,7 @@ export default function Adminlogin({setLoginUser}){
          .then(res => {
              alert(res.data.message)
              setLoginUser(res.data.user)
-             navigate("/")
+             navigate("/FIRForm")
          })
      }
 

@@ -15,6 +15,15 @@ mongoose.connect("mongodb://localhost:27017/myFIR-LoginRegister", {
     console.log("DB connected")
 })
 
+// app.get("/", (req, res)=>{
+//   res.send("My-API");
+// })
+
+
+
+/////////////////////////////////////////////   REGISTER-LOGIN SERVER  SIDE  //////////////////////////////////////////////////////////
+
+
 
 const userSchema = new mongoose.Schema({
     name: String,
@@ -24,11 +33,6 @@ const userSchema = new mongoose.Schema({
 })
 
 const User = new mongoose.model("User", userSchema)
-
-
-// app.get("/", (req, res)=>{
-//   res.send("My-API");
-// })
 
 
 // Post Routes
@@ -75,7 +79,7 @@ app.post("/AdminSignUP", (req, res)=> {
 
 })
 
-
+////////////////////////////////////////////////////////    END     //////////////////////////////////////////////////////////////////////////
 
 
 
@@ -194,13 +198,17 @@ app.post("/FIRform", (req, res)=> {
                 if(err) {
                     res.send(err)
                 } else {
-                    res.send( { message: "Successfully Registered" })
+                    res.send( { message: "fIR Record Added Successfully" })
                 }
             })
         }
     })
 
 })
+
+/////////////////////////////////////////////////////////  END   /////////////////////////////////////////////////////////////////
+
+
 
 app.listen(9002,() => {
     console.log("BE started at port 9002")

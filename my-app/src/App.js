@@ -1,3 +1,4 @@
+import LandingPage  from './LandingPage/LandingPage';
 import Navbar  from './Navbar';
 import MainComponent from './MainHomePage';
 import Footer from './Footer';
@@ -10,10 +11,13 @@ import { useState } from 'react';
 export default function App(){
   const [ user,  setLoginUser] = useState({})
 
+
     return (
         <>
+
         <Routes>
-          <Route exact path="/" element=
+        <Route  path="/"  element={<LandingPage/>} />
+          <Route exact path="/FIRForm" element=
             {
                  user, user._id ? <FIRform setLoginUser={setLoginUser}/> : <Adminlogin setLoginUser={setLoginUser}/>
             } />
@@ -21,12 +25,14 @@ export default function App(){
           <Route  path="/AdminSignUP"  element={<AdminsignUP/>} />
           <Route  path="/FIRform"  element={<FIRform/>} />
         </Routes>
-    {/* <Navbar />
-        <MainComponent />
-        <AdminSignUP/>
-        <FIRform/>
-        <Footer />
-        <AdminLogin/> */}
+
+    // {/* <Navbar />
+      // <LandingPage/>
+    //     <MainComponent />
+    //     <AdminSignUP/>
+    //     <FIRform/>
+    //     <Footer />
+    //     <AdminLogin/> */}
         </>
     )
 }

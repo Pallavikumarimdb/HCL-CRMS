@@ -1,0 +1,169 @@
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #cfdddd;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100%; */
+  /* margin-left: 50%; */
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s  infinite ease-in-out;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  /* width: 100%; */
+  width: 50px;
+  height: 50px;
+  /* border-radius: 100%; */
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/* @keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+} */
+
+/* ============================================ */
+.cube-grid {
+  width: 43px;
+  height: 43px;
+  margin:  auto;
+  position: fixed;
+}
+
+.cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color:#2980b9;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.scube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
+
+
+
+
+/* ==================== CUSTOM CSS ======================= */
+
+.text-load-head{
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.load-logo{
+  font-family: poppins;
+  font-size: 1.1rem;
+  align-items: center;
+  text-align: center;
+  display: block;
+  max-width: 500px;
+  color: aliceblue;
+  background-color: #1e3957;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 25px 25px 60px #97a1a1, -20px -20px 60px #ffffff;
+  z-index: 50;
+}
+.long-text1{
+  font-size: 1rem;
+  margin-left: 80px;
+  max-width: 350px;
+}
+
+.long-text2{
+  font-size: .9rem;
+}
+.ncb{
+  font-weight: bold;
+}
+.long-text3{
+  max-width: 200px;
+  margin-left: 150px;
+  font-size: .8rem;
+  line-height: 1rem;
+  /* margin-bottom: .5rem;
+  padding-bottom: .5rem; */
+}
+.long-text4{
+  margin-top: .5rem;
+  /* padding-top: .5rem; */
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.team-name{
+  color:aqua;
+line-height: 1rem;
+  font-weight: 400;
+}
