@@ -156,7 +156,7 @@ a{
   visibility: visible;
 }
 
-.log-form button {
+.log-form .button {
   cursor: pointer;
   /* background: var(--secondary-color); */
   background-color:#067ff9;
@@ -167,14 +167,15 @@ a{
   padding: 0.618em 1.2em;
   border-radius: 0.4em;
   font-family: 'Yeseva One', Georgia, cursive;
+  text-align: center;
   display: block;
   margin-top: 1.2em;
   margin: auto;
   width: 92.5%;
 }
 
-.log-form button:active,
-.log-form button:focus {
+.log-form .button:active,
+.log-form .button:focus {
   outline: 0;
   background-color: #fc364c;
 }

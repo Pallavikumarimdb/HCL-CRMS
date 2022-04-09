@@ -33,11 +33,13 @@ const User = new mongoose.model("User", userSchema)
 
 // Post Routes
 app.post("/AdminLogin", (req, res)=> {
+  console.log(req.body);
     const {userid, password} = req.body
     User.findOne({ userid: userid}, (err, user) => {
         if(user){
             if(password === user.password ) {
                 res.send({message: "Login Successfull", user: user})
+                console.log(user);
             } else {
                 res.send({ message: "Password didn't match"})
             }

@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import "./logStyle.css"
 import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
-export default function AdminLogin(){
-  let url="../adminSignUP/AdminSignUP";
+export default function Adminlogin({setLoginUser}){
 
+
+  const navigate = useNavigate()
   const [ user, setUser] = useState({
          userid:"",
          password:""
@@ -18,12 +20,13 @@ export default function AdminLogin(){
          })
      }
 
+
      const AdminLogin = () => {
          axios.post("http://localhost:9002/AdminLogin", user)
          .then(res => {
              alert(res.data.message)
              setLoginUser(res.data.user)
-             history.push("/")
+             navigate("/")
          })
      }
 
@@ -32,8 +35,8 @@ export default function AdminLogin(){
     <div className="log-container container">
     {console.log("User", user)}
       <form id="form" className="log-form">
-        <a href="#" className="log-sign"><h2>SIGN UP!</h2></a>
-        <a href="#" className="log-log"><h2>LOGIN!</h2></a>
+        <a href="/AdminSignUP"   className="log-sign"><h2>SIGN UP!</h2></a>
+        <a href="/AdminLogin"  className="log-log"><h2>LOGIN!</h2></a>
         <hr className="log-center-ball" />
         <div className="log-form-control form-control">
           <label for="username">User ID</label>
@@ -45,11 +48,13 @@ export default function AdminLogin(){
           <input name="password" value={user.password} onChange={ handleChange } type="password" id="password" placeholder="Enter password" />
           <small>Error message</small>
         </div>
-        <button type="submit" onClick={AdminLogin}>LOGIN</button>
+        {/* <button type="submit" onClick = {AdminLogin}>LOGIN</button> */}
+        <div className="button" onClick={AdminLogin}>LOGIN</div>
 
-        <a href={url} className="log-forg-pass"><p>Forgot Password ?</p></a>
+        <a href="#" className="log-forg-pass"><p>Forgot Password ?</p></a>
       </form>
     </div>
     </>
   )
+
 }

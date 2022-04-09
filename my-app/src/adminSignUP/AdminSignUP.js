@@ -2,9 +2,11 @@ import React, { useState } from "react"
 import "./SignUpStyle.css"
 import AdminLogin from '../adminLogin/AdminLogin';
 import axios from "axios"
-
+import { useNavigate } from "react-router-dom"
 
 export default function AdminSignUP(){
+
+  const history = useNavigate()
 
   const [ user, setUser] = useState({
           name: "",
@@ -29,7 +31,7 @@ const AdminSignUP = () => {
         axios.post("http://localhost:9002/AdminSignUP", user)
         .then( res => {
             alert(res.data.message)
-            history.push("/login")
+            history.push("/AdminLogin")
         })
     } else {
         alert("invalid input")
@@ -44,8 +46,8 @@ const AdminSignUP = () => {
     <div className="signup-container container">
     {console.log("User", user)}
       <form id="form" className="signup-form">
-        <a href="#" className="signup-sign" id="sign-id"><h2>SIGN UP!</h2></a>
-        <a href={<AdminLogin />} className="signup-log" id="log-id"><h2>LOGIN!</h2></a>
+        <a href="/AdminSignUP" className="signup-sign" id="sign-id"><h2>SIGN UP!</h2></a>
+        <a href="/AdminLogin" className="signup-log" id="log-id"><h2>LOGIN!</h2></a>
         <hr className="signup-center-ball" />
         <div className="signup-form-control signup-form-control">
           <label for="Name">Name</label>
@@ -72,7 +74,8 @@ const AdminSignUP = () => {
           <input name="reEnterPassword" value={user.reEnterPassword} onChange={ handleChange } type="password" id="password2" placeholder="Renter your password"  />
           <small>Error message</small>
         </div>
-        <button type="submit" onClick={AdminSignUP}>SIGN UP</button>
+      {/*  <button type="submit" onClick={AdminSignUP}>SIGN UP</button>*/}
+        <div className="button" onClick={AdminSignUP}>SIGN UP</div>
       </form>
     </div>
     </>
