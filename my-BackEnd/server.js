@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import mongoose from "mongoose"
-
+// const FIRData = require('/FIRformServer');
 
 const app = express()
 app.use(express.json())
@@ -81,8 +81,126 @@ app.post("/AdminSignUP", (req, res)=> {
 
 
 
+/////////////////////////////////////////////   FIR FORM SERVER  SIDE  //////////////////////////////////////////////////////////
+
+const fIRSchema = new mongoose.Schema({
+  state: String,
+  district: String,
+  policeStation: String,
+  fIRno: String,
+  date: String,
+
+  act1: String,
+  sections1: String,
+  act2: String,
+  sections2: String,
+  act3: String,
+  sections3: String,
+  otherActsAndSections: String,
+
+  occurenceDay: String,
+  occurenceDate: String,
+  occurenceTime: String,
+  informatioReceivedDate: String,
+  informatioReceivedTime: String,
+  diaryReferenceEntryNo: String,
+  diaryReferenceTime: String,
+
+  written: String,
+  oral: String,
+
+  directionAndDistncefromPS: String,
+  beatNo: String,
+  address: String,
+  outsideNameofPSAndDistrict: String,
+
+  complainantName: String,
+  complainantFatherorHusbandName: String,
+  complainantDateOfBirth: String,
+  complainantNationality: String,
+  complainantOccupation: String,
+  complainantPassportNo: String,
+  complainantDateofIssue: String,
+  complainantPlaceOfIssue: String,
+  complainantAddress: String,
+
+  detailsOfSuspected: String,
+  reasonsforDelay: String,
+  particularsOfPropertiesStolenInvolved: String
+})
 
 
+
+const FIRUser = new mongoose.model("FIRUser", fIRSchema)
+
+
+
+
+app.post("/FIRform", (req, res)=> {
+  console.log(req.body);
+    const { state, district, policeStation, fIRno, date, act1, sections1, act2, sections2, act3, sections3, otherActsAndSections, occurenceDay, occurenceDate, occurenceTime, informatioReceivedDate, informatioReceivedTime,
+           diaryReferenceEntryNo, diaryReferenceTime, written, oral, directionAndDistncefromPS, beatNo, address, outsideNameofPSAndDistrict, complainantName, complainantFatherorHusbandName, complainantDateOfBirth, complainantNationality,
+           complainantOccupation, complainantPassportNo, complainantDateofIssue, complainantPlaceOfIssue, complainantAddress, detailsOfSuspected, reasonsforDelay, particularsOfPropertiesStolenInvolved} = req.body
+    FIRUser.findOne({fIRno: fIRno}, (err, firDetails) => {
+        if(firDetails){
+            res.send({message: "FIR Number already registerd"})
+        } else {
+            const firDetails = new FIRUser({
+              state,
+              district,
+              policeStation,
+              fIRno,
+              date,
+
+              act1,
+              sections1,
+              act2,
+              sections2,
+              act3,
+              sections3,
+              otherActsAndSections,
+
+              occurenceDay,
+              occurenceDate,
+              occurenceTime,
+              informatioReceivedDate,
+              informatioReceivedTime,
+              diaryReferenceEntryNo,
+              diaryReferenceTime,
+
+              written,
+              oral,
+
+              directionAndDistncefromPS,
+              beatNo,
+              address,
+              outsideNameofPSAndDistrict,
+
+              complainantName,
+              complainantFatherorHusbandName,
+              complainantDateOfBirth,
+              complainantNationality,
+              complainantOccupation,
+              complainantPassportNo,
+              complainantDateofIssue,
+              complainantPlaceOfIssue,
+              complainantAddress,
+
+              detailsOfSuspected,
+              reasonsforDelay,
+              particularsOfPropertiesStolenInvolved
+            })
+            firDetails.save(err => {
+                if(err) {
+                    res.send(err)
+                } else {
+                    res.send( { message: "Successfully Registered" })
+                }
+            })
+        }
+    })
+
+})
 
 app.listen(9002,() => {
     console.log("BE started at port 9002")
