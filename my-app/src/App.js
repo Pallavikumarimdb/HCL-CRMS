@@ -19,6 +19,7 @@ export default function App(){
             } />
           <Route  path="/AdminLogin" element={<Adminlogin setLoginUser={setLoginUser}/>} />
           <Route  path="/AdminSignUP"  element={<AdminsignUP/>} />
+          <Route  path="/FIRform"  element={<FIRform/>} />
         </Routes>
     {/* <Navbar />
         <MainComponent />

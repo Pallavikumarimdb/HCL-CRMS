@@ -161,7 +161,7 @@ a {
   visibility: visible;
 }
 
-.FIR-form button {
+.FIR-form .button {
   cursor: pointer;
   /* background: var(--secondary-color); */
   background-color: #067ff9;
@@ -180,8 +180,8 @@ a {
   margin-top: 50px;
 }
 
-.FIR-form button:active,
-.FIR-form button:focus {
+.FIR-form .button:active,
+.FIR-form .button:focus {
   outline: 0;
   background-color: #fc364c;
 }
