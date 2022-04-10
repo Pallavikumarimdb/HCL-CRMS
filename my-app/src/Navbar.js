@@ -10,7 +10,7 @@ export default function Navbar(){
     <i class="fas fa-bars"></i>
   </label>
   <ul className="nav-list v-class-resp">
-  <li><a href="index.html">Home</a></li>
+  <li><a href="/FIRform">Home</a></li>
   <li><a href="About.html">About</a></li>
   <li><a href="#services">Services</a></li>
   <li><a href="contact.html">Contact</a></li>

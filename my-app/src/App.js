@@ -27,7 +27,7 @@ export default function App(){
         </Routes>
 
     // {/* <Navbar />
-      // <LandingPage/>
+    // <LandingPage/>
     //     <MainComponent />
     //     <AdminSignUP/>
     //     <FIRform/>

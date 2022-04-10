@@ -493,8 +493,9 @@ const FIRform = () => {
 
               </div>
             </div>
-          {/* <button className="FIR-print-button " onClick={window.print}> Print complaint </button>*/}
-           <button className="FIR-print-button button" onClick={window.print}> Print complaint </button>
+          {/* <button className="FIR-print-button " onClick={window.print}> Print complaint </button>
+           <button className="FIR-print-button button" onClick={window.print}> Print complaint </button>*/}
+           <div className="FIR-print-button button" onClick={window.print}> Print complaint</div>
             {/* <button type="submit">SUBMIT</button> */}
             <div className="button" onClick={FIRform}>LOGIN</div>
       </form>
