@@ -80,7 +80,7 @@ const FIRform = () => {
     const { state, district, policeStation, fIRno, date, act1, sections1, act2, sections2, act3, sections3, otherActsAndSections, occurenceDay, occurenceDate, occurenceTime, informatioReceivedDate, informatioReceivedTime,
            diaryReferenceEntryNo, diaryReferenceTime, written, oral, directionAndDistncefromPS, beatNo, address, outsideNameofPSAndDistrict, complainantName, complainantFatherorHusbandName, complainantDateOfBirth, complainantNationality,
            complainantOccupation, complainantPassportNo, complainantDateofIssue, complainantPlaceOfIssue, complainantAddress, detailsOfSuspected, reasonsforDelay, particularsOfPropertiesStolenInvolved } = user
-    if( district && policeStation && fIRno && act1 && sections1 && act2 && sections2 && act3 && sections3 && otherActsAndSections && occurenceDay && informatioReceivedDate && informatioReceivedTime &&
+    if(district && policeStation && fIRno && act1 && sections1 && act2 && sections2 && act3 && sections3 && otherActsAndSections && occurenceDay && informatioReceivedDate && informatioReceivedTime &&
            diaryReferenceEntryNo &&  directionAndDistncefromPS && beatNo && address && outsideNameofPSAndDistrict && complainantName && complainantFatherorHusbandName && complainantDateOfBirth && complainantNationality &&
            complainantOccupation && complainantPassportNo  && complainantPlaceOfIssue && complainantAddress && detailsOfSuspected && reasonsforDelay && particularsOfPropertiesStolenInvolved){
         axios.post("http://localhost:9002/FIRform", user)
