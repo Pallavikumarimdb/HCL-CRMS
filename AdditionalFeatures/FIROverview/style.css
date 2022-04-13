@@ -69,7 +69,6 @@ div {
 
 .adminReport {
   margin-top: 70px;
-  height: 2350px;
   width: 90%;
   background-color: #1e3957;
   position: relative;
@@ -92,6 +91,26 @@ div {
   letter-spacing: 0.5px;
   outline: none;
   border: none;
+}
+
+.act, .section{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 48%;
+}
+.OtherActs{
+  margin: 0;
+  padding: 0;
+}
+
+.occurence{
+  margin-bottom: 20px;
+}
+.fir-detai{
+  display: block;
+  margin-top: 30px;
+  margin-left: 15px;
 }
 
 .adminReport--title {
@@ -142,6 +161,8 @@ button {
 } */
 div {
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -151,7 +172,11 @@ div {
 }
 
 .card {
-  height: 400px;
+  height: 500px;
+}
+.full-view, .btn-outline-secondary{
+  text-align: center;
+  align-items: center;
 }
 
 .row {
@@ -161,7 +186,7 @@ div {
 
 
 .card-block{
-  width:30%;
+  width:20%;
 }
 
 /* <============================ carousel =============================> */
@@ -191,18 +216,18 @@ div {
 
 .float-container {
     border: 3px solid #fff;
-    padding: 20px;
+    padding: 5px;
 }
 
 .float-child1 {
-    width: 70%;
+    width: 45%;
     float: left;
-    padding: 20px;
+    padding: 5px;
 }
 
 .float-child2 {
-    /* width: 30%; */
-    margin-left: 10px;
+    width: 45%;
+    margin-left: 30px;
     float: left;
-    padding: 20px;
+    padding: 5px;
 }
