@@ -106,12 +106,12 @@ const FIRform = () => {
     <>
     <Navbar />
     {console.log("FIRUser", user)}
-    <div className="FIR-container container">
+    <div className="FIR-container ">
       <form id="form" className="FIR-form">
         <div className="FIR-head-sign">
 
           <h2 className="FIR-head-h2">FIRST INFORMATION REPORT (FIR)</h2>
-          <p>
+          <p className="FIR-head-p">
             (Under Section 154 Cr. P.C)
           </p>
         </div>
@@ -497,7 +497,7 @@ const FIRform = () => {
            <button className="FIR-print-button button" onClick={window.print}> Print complaint </button>*/}
            <div className="FIR-print-button button" onClick={window.print}> Print complaint</div>
             {/* <button type="submit">SUBMIT</button> */}
-            <div className="button" onClick={FIRform}>LOGIN</div>
+            <div className="button" onClick={FIRform}>SUBMIT</div>
       </form>
 
     </div>

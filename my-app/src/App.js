@@ -5,6 +5,7 @@ import Footer from './Footer';
 import AdminsignUP from './adminSignUP/AdminSignUP';
 import Adminlogin from './adminLogin/AdminLogin';
 import FIRform from './FIRform/FIRform';
+import FIROverviewComponent from './FIROverviewComponent/FirOverviewComponent';
 import { Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
@@ -24,15 +25,25 @@ export default function App(){
           <Route  path="/AdminLogin" element={<Adminlogin setLoginUser={setLoginUser}/>} />
           <Route  path="/AdminSignUP"  element={<AdminsignUP/>} />
           <Route  path="/FIRform"  element={<FIRform/>} />
+          <Route  path="/FIROverviewComponent"  element={<FIROverviewComponent/>} />
         </Routes>
 
-    // {/* <Navbar />
-    // <LandingPage/>
+
+
+
+
+
+  {/* <LandingPage/>
+         <Navbar />
     //     <MainComponent />
-    //     <AdminSignUP/>
+    //     <AdminsignUP/>
     //     <FIRform/>
     //     <Footer />
-    //     <AdminLogin/> */}
+    //     <Adminlogin/>
+
+    // <FIROverviewComponent/>*/}
+
+    
         </>
     )
 }

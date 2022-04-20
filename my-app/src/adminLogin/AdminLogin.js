@@ -32,7 +32,7 @@ export default function Adminlogin({setLoginUser}){
 
   return(
     <>
-    <div className="log-container container">
+    <div className="log-container ">
     {console.log("User", user)}
       <form id="form" className="log-form">
         <a href="/AdminSignUP"   className="log-sign"><h2>SIGN UP!</h2></a>

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "./SignUpStyle.css"
-import AdminLogin from '../adminLogin/AdminLogin';
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
@@ -43,7 +42,7 @@ const AdminSignUP = () => {
 
   return(
     <>
-    <div className="signup-container container">
+    <div className="signup-container">
     {console.log("User", user)}
       <form id="form" className="signup-form">
         <a href="/AdminSignUP" className="signup-sign" id="sign-id"><h2>SIGN UP!</h2></a>
