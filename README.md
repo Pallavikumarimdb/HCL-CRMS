@@ -1,2 +1,2 @@
 # HCL-CRMS
-This project is a Crime record management system
+This project is a Crime record management system (CRMS-Portal).
