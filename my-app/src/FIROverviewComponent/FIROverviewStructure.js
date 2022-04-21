@@ -93,6 +93,12 @@ export default function FIROverviewStructure({users}){
 }
 
    </div>
+   <div class="align-items-center-FOV ">
+       <p class="mb-0">&copy; 2022 - 2023 | All Rights Reserved - Pallavi Kumari
+         <a href="#" class="text-copy">Privacy Policy</a> |
+         <a href="#" class="text-term">Terms of Use</a>
+       </p>
+     </div>
    </>
 
   )

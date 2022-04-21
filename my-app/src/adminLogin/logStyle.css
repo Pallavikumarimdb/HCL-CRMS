@@ -50,7 +50,8 @@ body {
   /* background-color: var(--primary-color); */
   box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
   background-color: #1e3957;
-  margin: 30px auto;
+  margin: 10% auto;
+  margin-bottom: 6%;
 }
 
 .log-center-ball {
@@ -186,4 +187,17 @@ a{
   text-decoration: underline;
   margin-top: 30px;
   text-align: center;
+}
+
+.align-items-center{
+  color: dimgrey;
+  font-size: 0.7rem;
+  font-weight:600;
+  text-align: center;
+}
+.text-copy{
+  margin-left: 5px;
+}
+.text-term{
+  margin-left: 5px;
 }

@@ -16,11 +16,7 @@ export default function FIRForm(){
   const history = useNavigate()
 
   const [ user, setUser] = useState({
-          // name: "",
-          // userid: "",
-          // email:"",
-          // password:"",
-          // reEnterPassword: "",
+
 
           state: "",
           district: "",
