@@ -1,11 +1,12 @@
 import React from 'react'
-
+import Navbar  from '../Navbar';
 
 export default function FIROverviewStructure({users}){
 
   return(
 
    <>
+   <Navbar />
    <div className="adminReport">
      <p className="adminReport--title">FIR REPORT LIST</p>
      <p className="adminReport--point">List of report that comes under your legislature</p>
@@ -83,7 +84,6 @@ export default function FIROverviewStructure({users}){
      <div className="full-view">
        <a href="#" className="btn btn-outline-secondary">View full complaint</a>
      </div>
-
    </div>
    </div>
 
