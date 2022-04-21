@@ -50,7 +50,7 @@ body {
   /* background-color: var(--primary-color); */
   box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
   background-color: #1e3957;
-  margin: 30px auto;
+  margin: 10% auto;
   scroll-behavior: smooth;
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./logStyle.css"
 import axios from "axios"
+import Navbar  from '../Navbar';
 import { useNavigate } from "react-router-dom"
 
 export default function Adminlogin({setLoginUser}){
@@ -32,6 +33,7 @@ export default function Adminlogin({setLoginUser}){
 
   return(
     <>
+    <Navbar />
     <div className="log-container ">
     {console.log("User", user)}
       <form id="form" className="log-form">
@@ -53,6 +55,13 @@ export default function Adminlogin({setLoginUser}){
         <a href="#" className="log-forg-pass"><p>Forgot Password ?</p></a>
       </form>
     </div>
+
+    <div class="align-items-center ">
+        <p class="mb-0">&copy; 2022 - 2023 | All Rights Reserved - Pallavi Kumari
+          <a href="#" class="text-copy">Privacy Policy</a> |
+          <a href="#" class="text-term">Terms of Use</a>
+        </p>
+      </div>
     </>
   )
 

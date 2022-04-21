@@ -11,7 +11,7 @@ export default function Navbar(){
   </label>
   <ul className="nav-list v-class-resp">
   <li><a href="/FIRform">Home</a></li>
-  <li><a href="About.html">About</a></li>
+  <li><a href="/FIRGuide">FIR-Guide</a></li>
   <li><a href="/FIROverviewComponent">Complaint Details</a></li>
   <li><a href="contact.html">Contact</a></li>
   </ul>

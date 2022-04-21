@@ -2,6 +2,7 @@ import LandingPage  from './LandingPage/LandingPage';
 import Navbar  from './Navbar';
 import MainComponent from './MainHomePage';
 import Footer from './Footer';
+import FIRGuide from './FIRGuide/FirGuide';
 import AdminsignUP from './adminSignUP/AdminSignUP';
 import Adminlogin from './adminLogin/AdminLogin';
 import FIRform from './FIRform/FIRform';
@@ -25,6 +26,7 @@ export default function App(){
           <Route  path="/AdminLogin" element={<Adminlogin setLoginUser={setLoginUser}/>} />
           <Route  path="/AdminSignUP"  element={<AdminsignUP/>} />
           <Route  path="/FIRform"  element={<FIRform/>} />
+          <Route  path="/FIRGuide"  element={<FIRGuide/>} />
           <Route  path="/FIROverviewComponent"  element={<FIROverviewComponent/>} />
         </Routes>
 
@@ -43,7 +45,7 @@ export default function App(){
 
     // <FIROverviewComponent/>*/}
 
-    
+
         </>
     )
 }
