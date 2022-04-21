@@ -8,7 +8,8 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/myFIR-LoginRegister", {
+mongoose.connect("mongodb+srv://pallavimdb:Megha1995@fir-doc-cluster.f1wrz.mongodb.net/CRMS-PORTAL-DATA", {
+  // mongodb://localhost:27017/myFIR-LoginRegister
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import axios from "axios"
 export default function Navbar(){
     return(
         <>
@@ -12,7 +12,7 @@ export default function Navbar(){
   <ul className="nav-list v-class-resp">
   <li><a href="/FIRform">Home</a></li>
   <li><a href="About.html">About</a></li>
-  <li><a href="">Complaint Details</a></li>
+  <li><a href="/FIROverviewComponent">Complaint Details</a></li>
   <li><a href="contact.html">Contact</a></li>
   </ul>
         </nav>
