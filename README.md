@@ -1,4 +1,4 @@
-<img src="./assets/firlogo1.png" alt="FIR-LOGO" style="width:25%" />
+<div align="center"> <img src="./assets/firlogo1.png" alt="FIR-LOGO" style="width:30%" /> </div>
 
 <h1 align="center"> E-FIR PORTAL </h1>
 
