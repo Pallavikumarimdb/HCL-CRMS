@@ -23,7 +23,7 @@
 | Sign-up page                             |     ✅     |       ✅       |     ✅    |        ✅        |
 | Log-in page                              |     ✅     |       ✅       |     ✅    |        ✅        |
 | Home page/the FIR reporting form         |     ✅     |       ✅       |     ✅    |        ✅        |
-| Past Reported FIR Overview               |     ✅     |       ✅       |     ✅    |        ✅        |
+| Past Reported FIR Overview               |     ✅     |       ✅       |     ✅    |                  |
 | FIR Form Filling Guide(FAQ)              |     ✅     |       ✅       |     🚧    |                  |
 | Get mail for Forget Password             |     ✅     |       ✅       |     🚧    |                  |
 | Successful action confirmation           |     ✅     |                |            |                  |
