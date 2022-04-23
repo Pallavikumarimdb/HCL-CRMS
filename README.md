@@ -1,4 +1,6 @@
-# E-FIR PORTAL <img src="./assets/firlogo1.png" alt="FIR-LOGO" style="width:25%" />
+<img src="./assets/firlogo1.png" alt="FIR-LOGO" style="width:25%" />
+
+<h1 align="center"> E-FIR PORTAL </h1>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
