@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Yeseva+One&display=swap');
+
+* {
+  --hibiscus-love: #fc465c;
+  --fine-ii: #f9b198;
+  --afl: #fac8af;
+  --mexican-sky: #cfdddd;
+  --brasillia-peach: #facb85;
+  --free: #33032d;
+  --captured: #2b2120;
+
+  --bg-color: var(--mexican-sky);
+  --text-color: var(--free);
+
+  --success-color: #73d12e;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  background-color: var(--bg-color);
+  color: var(--free);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-height: 80vh;
+}
+
+.log-container {
+  width: 430px;
+  border-radius: 0.6em;
+  padding: 10px;
+  /* background-color: var(--primary-color); */
+  box-shadow: 20px 20px 60px #97a1a1, -20px -20px 60px #ffffff;
+  background-color: #1e3957;
+  margin: 10% auto;
+  margin-bottom: 6%;
+}
+
+
+
+
+.log-form {
+  padding: 30px 40px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.log-form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: inherit;
+  border: none;
+}
+
+.log-form-control label {
+  /* color: var(--text-color); */
+  color: aliceblue;
+  display: block;
+  margin-bottom: 5px;
+}
+.log-form-control input {
+  border-radius: 6px;
+  /* background: var(--primary-color); */
+    background-color: var(--bg-color);
+  /* box-shadow: inset 3px 3px 7px #e9bd7c, inset -3px -3px 7px #ffd98e; */
+  min-height: 2.618em;
+  border: var(--quadrary-color) solid 2px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.log-form-control input:focus {
+  outline: 0;
+  border-color: var(--tertiary-color);
+}
+
+.log-form-control.success input {
+  border-color: var(--success-color);
+}
+
+.log-form-control.error input {
+  border-color: var(--error-color);
+}
+
+.log-form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.log-form-control.error small {
+  visibility: visible;
+}
+
+.log-form .butotp {
+  cursor: pointer;
+  /* background: var(--secondary-color); */
+  background-color:#067ff9;
+  /* box-shadow: 4px 4px 8px #c19c66, -4px -4px 8px #fffaa4; */
+  border: 1px solid #ec263c66;
+  color:azure;
+  font-size: 16px;
+  padding: 0.618em 1.2em;
+  border-radius: 0.4em;
+  font-family: 'Yeseva One', Georgia, cursive;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1.2em;
+  margin: auto;
+  width: 35.5%;
+  margin-left: 10px;
+}
+
+.log-form .butotp:active,
+.log-form .butotp:focus {
+  outline: 0;
+  background-color: #fc364c;
+}
+
+.backTolog{
+  cursor: pointer;
+  /* background: var(--secondary-color); */
+  background-color:#067ff9;
+  /* box-shadow: 4px 4px 8px #c19c66, -4px -4px 8px #fffaa4; */
+  border: 1px solid #ec263c66;
+  color:azure;
+  font-size: 16px;
+  padding: 0.618em .8em;
+  border-radius: 0.4em;
+  font-family: 'Yeseva One', Georgia, cursive;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  margin-top: 1.5em;
+  margin-left: 30px;
+  width: 50%;
+}
+
+.log-form .backTolog:active,
+.log-form .backTolog:focus {
+  outline: 0;
+  background-color: #fc364c;
+}
+
+.back-sign{
+  color:azure;
+  font-size: 16px;
+  font-family: 'Yeseva One', Georgia, cursive;
+  text-align: center;
+}
+.back-sign:hover{
+  color:crimson;
+}
+
+
+.log-forg-pass p{
+  color:dimgrey;
+  text-decoration: underline;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.align-items-center{
+  color: dimgrey;
+  font-size: 0.7rem;
+  font-weight:600;
+  text-align: center;
+}
+.text-copy{
+  margin-left: 5px;
+}
+.text-term{
+  margin-left: 5px;
+}
