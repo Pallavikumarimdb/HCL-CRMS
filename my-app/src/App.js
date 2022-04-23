@@ -7,6 +7,7 @@ import AdminsignUP from './adminSignUP/AdminSignUP';
 import Adminlogin from './adminLogin/AdminLogin';
 import FIRform from './FIRform/FIRform';
 import FIROverviewComponent from './FIROverviewComponent/FirOverviewComponent';
+import ForgetPassOTP from './ForgetPass/ForgetPassOTP';
 import { Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
@@ -28,6 +29,7 @@ export default function App(){
           <Route  path="/FIRform"  element={<FIRform/>} />
           <Route  path="/FIRGuide"  element={<FIRGuide/>} />
           <Route  path="/FIROverviewComponent"  element={<FIROverviewComponent/>} />
+          <Route  path="/ForgetPassOTP"  element={<ForgetPassOTP/>} />
         </Routes>
 
 

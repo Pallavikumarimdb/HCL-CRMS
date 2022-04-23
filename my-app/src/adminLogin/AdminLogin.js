@@ -52,7 +52,7 @@ export default function Adminlogin({setLoginUser}){
         </div>
         {/* <button type="submit" onClick = {AdminLogin}>LOGIN</button> */}
         <div className="button" onClick={AdminLogin}>LOGIN</div>
-        <a href="#" className="log-forg-pass"><p>Forgot Password ?</p></a>
+        <a href="/ForgetPassOTP" className="log-forg-pass"><p>Forgot Password ?</p></a>
       </form>
     </div>
 
