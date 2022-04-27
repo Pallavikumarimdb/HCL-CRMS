@@ -26,3 +26,31 @@
 | Past Reported FIR Overview               |     ✅     |       ✅       |     ✅    |        ✅        |
 | FIR Form Filling Guide(FAQ)              |     ✅     |       ✅       |     ✅    |        ✅        |
 | Navbar                                   |     ✅     |       ✅       |     ✅    |        ✅        |
+
+
+
+## App component Screenshots
+
+### DDos Protection Page
+
+<img style="width:100%" src="./assets/webPageSS/0.jpg" >
+
+### Admin Sign Up Page
+
+<img style="width:100%" src="./assets/webPageSS/2.jpg" >
+
+### Portal Login Page
+
+<img style="width:100%" src="./assets/webPageSS/1.jpg" >
+
+### E-FIR Reporting Page
+
+<img style="width:100%" src="./assets/webPageSS/3.jpg" >
+
+### FIR Report List Page
+
+<img style="width:100%" src="./assets/webPageSS/4.jpg" >
+
+## View the Project Ideation Map below 👇
+
+#### <h6> Click Here:- https://github.com/Pallavikumarimdb/HCL-CRMS/blob/main/IdeationMap.md<h6>
