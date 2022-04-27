@@ -1,6 +1,6 @@
 #  **Mini project for HCL Internship**
 
-## Title: This project is a Crime record management system [CRMS]
+## Title: Crime record management system [CRMS]
 
 ### Introduction:
  The crime record management system project is a web based application that provides facility for the police/officials to Add the Crime Details(FIR) and get the record easily on Online platform. The system at any point of time can provide the details of FIR document, existing charge sheets and their statuses. A database system in which police will keep the record of criminals who have been arrested. This platform will also provide the total count of crime record yearly, and will give the information about how many cases has been solved and how many are still pending.
@@ -46,4 +46,4 @@
 #
 
 ### Project execution work flow diagram
-<img src="https://github.com/Pallavikumarimdb/HCL-CRMS/blob/main/DOCUMENTATION/CRMS-FlowDiagramjpeg2.jpg" alt="Work-flow-diagram" style="width:100%"/>
+<img src="./assets/CRMS-FlowDiagramjpeg2.jpg" alt="Work-flow-diagram" style="width:100%"/>
