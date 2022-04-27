@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./SignUpStyle.css"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
+import Navbar  from '../Navbar';
 
 export default function AdminSignUP(){
 
@@ -42,6 +43,7 @@ const AdminSignUP = () => {
 
   return(
     <>
+    <Navbar />
     <div className="signup-container">
     {console.log("User", user)}
       <form id="form" className="signup-form">
@@ -77,6 +79,13 @@ const AdminSignUP = () => {
         <div className="button" onClick={AdminSignUP}>SIGN UP</div>
       </form>
     </div>
+    <div class="align-items-center ">
+        <p class="mb-0">&copy; 2022 - 2023 | All Rights Reserved - Pallavi Kumari
+          <a href="#" class="text-copy">Privacy Policy</a> |
+          <a href="#" class="text-term">Terms of Use</a>
+        </p>
+      </div>
+
     </>
   )
 }
