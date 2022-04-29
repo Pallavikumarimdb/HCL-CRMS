@@ -26,7 +26,7 @@
  * ExpressJS
  * ReactJS
  * MongoDB/Mongoose(DATABASE)
- * PHP
+ 
 
 #
 
