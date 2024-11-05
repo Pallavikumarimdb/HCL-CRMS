@@ -79,7 +79,7 @@ const FIRform = () => {
     if(district && policeStation && fIRno && act1 && sections1 && act2 && sections2 && act3 && sections3 && otherActsAndSections && occurenceDay && informatioReceivedDate && informatioReceivedTime &&
            diaryReferenceEntryNo &&  directionAndDistncefromPS && beatNo && address && outsideNameofPSAndDistrict && complainantName && complainantFatherorHusbandName && complainantDateOfBirth && complainantNationality &&
            complainantOccupation && complainantPassportNo  && complainantPlaceOfIssue && complainantAddress && detailsOfSuspected && reasonsforDelay && particularsOfPropertiesStolenInvolved){
-        axios.post("http://localhost:9002/FIRform", user)
+        axios.post("https://hcl-crms.vercel.app/FIRform", user)
         .then( res => {
             alert(res.data.message)
             history.push("/Footer")
