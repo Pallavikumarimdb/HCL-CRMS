@@ -8,18 +8,10 @@ import 'dotenv/config'
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
-// app.use(cors())
 
-const options = [
-    cors({
-      origin:["http://localhost:9002/","http://localhost:3000", "https://hcl-crms-4u8p.vercel.app", "https://hcl-crms-4u8p.vercel.app/AdminSignUP", "https://hcl-crms-4u8p.vercel.app/AdminLogin"],
-      methods: ["POST","GET"],
-      allowedHeaders: ['Content-Type', 'Authorization'],
-      credentials: true,
-    })
-  ];
-  
-  app.use(options);
+app.use(cors())
+
+
 
 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -34,7 +26,12 @@ mongoose.connect(process.env.MONGODB_URI, {
 //   res.send("My-API");
 // })
 
-
+app.get('/',(req,res,next)=>{
+    res.status(200).json({
+      message:'bad request'
+    })
+  })
+  
 
 /////////////////////////////////////////////   REGISTER-LOGIN SERVER  SIDE  //////////////////////////////////////////////////////////
 
