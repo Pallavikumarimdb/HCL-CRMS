@@ -28,7 +28,7 @@ export default function AdminSignUP(){
 const AdminSignUP = () => {
     const { name, userid, email, password, reEnterPassword } = user
     if( name && userid && email && password && (password === reEnterPassword)){
-        axios.post("http://localhost:9002/AdminSignUP", user)
+        axios.post("https://hcl-crms-4u8p.vercel.app/AdminSignUP", user)
         .then( res => {
             alert(res.data.message)
             history.push("/AdminLogin")

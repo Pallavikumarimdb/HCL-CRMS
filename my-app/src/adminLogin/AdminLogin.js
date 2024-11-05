@@ -23,7 +23,7 @@ export default function Adminlogin({setLoginUser}){
 
 
      const AdminLogin = () => {
-         axios.post("http://localhost:9002/AdminLogin", user)
+         axios.post("https://hcl-crms-4u8p.vercel.app/AdminLogin", user)
          .then(res => {
              alert(res.data.message)
              setLoginUser(res.data.user)

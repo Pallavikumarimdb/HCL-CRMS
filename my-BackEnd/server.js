@@ -12,8 +12,8 @@ app.use(express.urlencoded())
 
 const options = [
     cors({
-      origin: '*',
-      methods: '*',
+      origin:["http://localhost:3000", "https://hcl-crms-4u8p.vercel.app", "https://hcl-crms-4u8p.vercel.app/AdminSignUP", "https://hcl-crms-4u8p.vercel.app/AdminLogin"],
+      methods: ["POST","GET"],
       allowedHeaders: ['Content-Type', 'Authorization'],
       credentials: true,
     })
@@ -22,7 +22,7 @@ const options = [
   app.use(options);
 
 
-mongoose.connect(process.env.DB_CONNECTION, {
+mongoose.connect(process.env.MONGODB_URI, {
   // mongodb://localhost:27017/myFIR-LoginRegister
     useNewUrlParser: true,
     useUnifiedTopology: true
