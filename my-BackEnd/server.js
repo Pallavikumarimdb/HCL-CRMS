@@ -12,7 +12,7 @@ app.use(express.urlencoded())
 
 const options = [
     cors({
-      origin:["http://localhost:3000", "https://hcl-crms-4u8p.vercel.app", "https://hcl-crms-4u8p.vercel.app/AdminSignUP", "https://hcl-crms-4u8p.vercel.app/AdminLogin"],
+      origin:["http://localhost:9002/","http://localhost:3000", "https://hcl-crms-4u8p.vercel.app", "https://hcl-crms-4u8p.vercel.app/AdminSignUP", "https://hcl-crms-4u8p.vercel.app/AdminLogin"],
       methods: ["POST","GET"],
       allowedHeaders: ['Content-Type', 'Authorization'],
       credentials: true,
