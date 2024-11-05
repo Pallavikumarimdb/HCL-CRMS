@@ -8,7 +8,19 @@ import 'dotenv/config'
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
-app.use(cors())
+// app.use(cors())
+
+const options = [
+    cors({
+      origin: '*',
+      methods: '*',
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      credentials: true,
+    })
+  ];
+  
+  app.use(options);
+
 
 mongoose.connect(process.env.DB_CONNECTION, {
   // mongodb://localhost:27017/myFIR-LoginRegister
